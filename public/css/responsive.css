@@ -1,0 +1,22 @@
+/*** Min Width ***/ 
+
+@media screen and (min-width: 992px){
+
+    #header .nav-link{
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    #eventos .event-destaque img{
+        max-height: 200px;
+    }
+}
+
+/*** Max Widht  ***/
+
+@media screen and (max-width: 991.98px){
+    
+    #header .collapse{
+        width: 100%;
+    }
+}

@@ -1,0 +1,158 @@
+body{
+    font-family: 'Roboto';
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 120px;
+}
+
+#header{
+    width: 100%;
+    border-bottom: 2px solid var(--secondary);
+    background-color: transparent;
+    transition: background ease-out .2s;
+}
+
+#header.active{
+    position: fixed;
+    box-shadow: 0 0 10px 0px rgba(0,0,0,0.3);
+    background: #fff;
+    z-index: 9999;
+}
+
+#header .collapse{
+    width: auto;
+}
+
+#header .nav-link{
+    text-transform: uppercase;
+    padding-left: 0;
+    padding-right: 0;
+    color: black;
+    border-bottom: 4px solid transparent;
+    transition: all ease-out .2s;
+}
+
+#header a.nav-link:hover{
+    border-bottom: 4px solid var(--primary);
+    color: var(--light-gray);
+}
+
+#banner-container{
+    width: 100%;
+    background: url('../images/bg.png') no-repeat center;
+    background-size: cover;
+}
+
+#banner-container h2{
+    text-transform: uppercase;
+    color: var(--light-pink);
+}
+
+.img-container img{
+    max-width: 200px;
+    display: inline-block;
+
+}
+
+#eventos a.event-destaque{
+    text-decoration: none;
+    background: #E5E5E5;
+    display: block;
+    border-radius: 8px;
+    transition: all ease-out 0.2s;
+}
+
+#eventos a.event-destaque:hover{
+    background: #fff;
+    box-shadow: 0px  0px 10px 0px rgba(0,0,0,0.3);
+    transform: scale(1.04);
+}
+
+#eventos .card-body{
+    padding: 20px;
+}
+
+#eventos .event-destaque img{
+    height: 160px;
+    width: 100%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+#eventos .event-date,
+.participants-number{
+    color: var(--light-gray);
+}
+
+#eventos .event-title{
+    text-transform: uppercase;
+    color: var(--dark);
+}
+
+/*** Criar eventos *************/
+
+#create h2{
+    text-transform: uppercase;
+}
+
+#create label{
+    font-weight: bold;
+}
+
+/*** main*****/
+
+#main .alert{
+    margin: 0;
+}
+
+/***** show ********/
+
+#show img{
+    border-radius: 10px;
+}
+
+#show p{
+    display: flex;
+}
+
+#show ion-icon{
+    margin-right: 5px;
+    color: var(--secondary);
+}
+
+#show #items-list{
+    list-style: none;
+    padding: 0;
+}
+
+#show #items-list li{
+    display: flex;
+}
+
+#show .msg-presenca{
+    max-width: 350px;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: skyblue;
+    color: rgb(0, 128, 15);
+}
+
+#my-events td form{
+    display: inline-block;
+}
+
+/*** Edite ******/
+
+#edite .img-form{
+    max-width: 100px;
+    border-radius: 5px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--light);
+}
